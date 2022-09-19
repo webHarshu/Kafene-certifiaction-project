@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kafene-products</title>
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./products.css">
+</head>
+
+<body>
+    <!-- header-section -->
+    <div class="top-bar">
+        <div class="topbar-Left-Menu">
+            <div class="top-bar-logo-Wrapper"><img
+                    src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="Logo">
+                <p class="topbar-brand-Name">Kafene</p>
+            </div>
+            <nav>
+                <a class="topbar-menu-Item  orders"  href="./orders.html">Orders</a>
+                <a class="topbar-menu-Item  products topbar-active"  href="./products.html">Products</a>
+                <a class="topbar-menu-Item  users" href="./users.html">Users</a>
+            </nav>
+        </div>
+        <a class="topbar-menu-Item" id="logout" href="">Logout</a>
+    </div>
+
+    <!-- all data  -->
+    <main class="main-container">
+        <div class="Homepage-Page-Wrapper">
+            <h1 class="Homepage-Main-Heading">Proudcts</h1>
+            <div class="Homepage-Products-Wrapper">
+                <!-- filter section  -->
+                <div class="Homepage-Filter-Wrapper ">
+                    <h3>Filters</h3>
+                    <div class="Homepage-Filter-Options">
+                        <p>Count: <span id="count"></span></p>
+                        <label class="Homepage-Filter-Checkbox"><input type="checkbox" name="products-expired"
+                                id="Expired" checked="">Expired</label>
+                        <label class="Homepage-Filter-Checkbox"><input type="checkbox" name="products-low-stock"
+                                id="Low-Stock" checked="">Low-Stock</label>
+                    </div>
+                </div>
+
+                <!-- table section  -->
+                <div style="width: 100%;">
+                    <table class="Homepage-Products-Table ">
+                        <tr>
+                            <th>ID</th>
+                            <th>Product name</th>
+                            <th>Product Brand</th>
+                            <th>Expiry Date</th>
+                            <th>Unit Price</th>
+                            <th>Stock</th>
+                        </tr>
+                        <tbody id="tbody">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./header.js" type="text/javascript"></script>
+    <script src="./products.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</body>
+
+</html>

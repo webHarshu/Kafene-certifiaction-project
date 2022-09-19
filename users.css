@@ -1,0 +1,125 @@
+.topbar-active{
+    color: #20b883;
+    border-bottom: 3px solid #20b883;
+}
+
+body, form, input, option, select, textarea {
+    font-family: "Poppins",sans-serif;
+}
+
+.MainContainer {
+    margin-top: 100px;
+}
+.UserList-Page-Wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 8% 4%;
+}
+.UserList-Main-Heading {
+    margin: 0;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.UserList-Orders-Wrapper {
+    width: 100%;
+    padding: 24px 0;
+}
+.UserList-Filter-Wrapper {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+}
+.UserList-Search-Box {
+    width: calc(100% - 100px);
+    padding: 12px 24px;
+    font-size: 15px;
+    border: 0;
+    border-bottom: 2px solid #8c8c8c;
+    margin: 0 36px 0 0;
+    outline: none;
+}
+input[type="search" i] {
+    appearance: auto;
+    box-sizing: border-box;
+    /* padding: 1px 2px; */
+}
+.UserList-Button {
+    display: inline-block;
+    border-radius: 30px;
+    padding: 14px 36px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #20b883;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.UserList-Order-Table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table {
+    display: table;
+    /* border-collapse: separate; */
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+table > tr {
+    vertical-align: middle;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.UserList-Order-Table  td, .UserList-Order-Table  th {
+    text-align: left;
+    padding: 12px 24px;
+    font-size: 14px;
+}
+
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    /* text-align: -internal-center; */
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.UserListTableRow td {
+    background-color: #fff;
+    border-bottom: 4px solid #f6f7fb;
+}
+
+.UserList-Primary-Text {
+    color: rgba(0,0,0,.8);
+    font-weight: 500;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+.UserList-Secondary-Text {
+    color: #8c8c8c;
+}
